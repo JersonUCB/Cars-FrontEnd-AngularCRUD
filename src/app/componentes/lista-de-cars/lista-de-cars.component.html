@@ -1,0 +1,15 @@
+
+<div *ngFor=" let car of cars" class="card card-body mb-2">
+  <div class="tarjeta">
+    <h1>Modelo: {{car.modelo}}</h1>
+    <h3>Marca: {{car.marca}}</h3>
+    <h3>Anio: {{car.anio}}</h3>
+    <h3>Procedencia: {{car.procedencia}}</h3>
+    <div class="col-md-4 ">
+      <img [src]="car.imgURL" class="card-img-top" alt="...">
+    </div>
+    <button type="button" (click)="eliminarAuto(car.id)">Eliminar</button>
+    <button type="button" class="btn btn-primary" [routerLink]="['/car/edit', car.id]">Editar</button>
+
+  </div>
+</div>

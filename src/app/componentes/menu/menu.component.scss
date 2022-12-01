@@ -1,0 +1,39 @@
+body {
+  margin: auto;
+  width: 640px;
+  padding: 50px;
+  font-family: 'Avenir', sans-serif;
+
+  background-color: #33475b;
+}
+a{
+  background-color: dodgerblue;
+  font-family: 'Avenir', sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: orangered;
+}

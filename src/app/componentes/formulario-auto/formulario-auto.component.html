@@ -1,0 +1,25 @@
+<div>
+  <form (submit)="agregarAuto()">
+    <div>
+      <label>MODELO :</label>
+      <input type="text" name="modelo" [(ngModel)]="car.modelo">
+    </div>
+    <div>
+      <label>MARCA :</label>
+      <input type="text" name="marca" [(ngModel)]="car.marca">
+    </div>
+    <div>
+      <label>ANIO :</label>
+      <input type="text" name="anio" [(ngModel)]="car.anio">
+    </div>
+    <div>
+      <label>PROCEDENCIA :</label>
+      <input type="text" name="procedencia" [(ngModel)]="car.procedencia">
+    </div>
+    <div>
+      <label>IMAGEN :</label>
+      <input type="text" name="imagen" [(ngModel)]="car.imgURL">
+    </div>
+    <button type="submit">AGREGAR</button>
+  </form>
+</div>
